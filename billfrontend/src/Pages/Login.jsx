@@ -58,7 +58,7 @@ const Login = () => {
     }
 
     // sending data to the server
-    fetch('http://localhost:5000/signin', {
+    fetch('https://bill-board-server.vercel.app/signin', {
       method: 'post',
       headers: {
         'Content-Type': 'application/json',
