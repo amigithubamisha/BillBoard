@@ -11,7 +11,7 @@ const ProfilePage = () => {
     const [password, setPassword] = useState("");
 
     useEffect(() => {
-        fetch("http://localhost:5000/profile", {
+        fetch("https://bill-board-server.vercel.app/profile", {
           headers: {
             "Authorization": "Bearer " + localStorage.getItem("jwt"),
           },
