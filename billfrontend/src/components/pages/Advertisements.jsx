@@ -9,7 +9,7 @@ const Advertisements = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('http://localhost:5000/allposts');
+        const response = await fetch('https://bill-board-server.vercel.app/allposts');
         const data = await response.json();
         setAdvertisementData(data);
         setLoading(false);
