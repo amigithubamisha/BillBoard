@@ -8,7 +8,7 @@ const Cards = () => {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/allposts", {
+    fetch("https://bill-board-server.vercel.app/allposts", {
       headers: {
         "Authorization": "Bearer " + localStorage.getItem("jwt"),
       },
