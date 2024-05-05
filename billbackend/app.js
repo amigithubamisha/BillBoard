@@ -8,7 +8,13 @@ const contactRoutes = require("./models/contactModel");
 
 dotenv.config();
 // Enable CORS middleware
-app.use(cors());
+app.use(cors(
+    {
+        origin: ["https://bill-board-front.vercel.app"],
+        methods: ["POST", "GET"] ,
+        credentials: true
+    }
+));
 app.use(express.json());
 
 require('./models/model')
