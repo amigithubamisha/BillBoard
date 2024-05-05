@@ -63,7 +63,7 @@ const CreateAds = () => {
       const cloudinaryUrls = await Promise.all(cloudinaryPromises);
       setUrls(cloudinaryUrls);
 
-      const postResponse = await fetch("http://localhost:5000/createPost", {
+      const postResponse = await fetch("https://bill-board-server.vercel.app/createPost", {
         method: "post",
         headers: {
           "Authorization": "Bearer " + localStorage.getItem("jwt"),
