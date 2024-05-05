@@ -9,7 +9,7 @@ const Contact = () => {
   useEffect(() => {
     const fetchContacts = async () => {
       try {
-        const response = await fetch('http://localhost:5000/contacts');
+        const response = await fetch('https://bill-board-server.vercel.app/contacts');
         const data = await response.json();
         setContacts(data.contacts);
         setLoading(false);
@@ -25,7 +25,7 @@ const Contact = () => {
 
   const handleDeleteContact = async (id) => {
     try {
-      const response = await fetch(`http://localhost:5000/contact/${id}`, {
+      const response = await fetch(`https://bill-board-server.vercel.app/contact/${id}`, {
         method: 'DELETE',
       });
 
