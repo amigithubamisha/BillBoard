@@ -41,7 +41,7 @@ const Register = () => {
     }
   
     // sending data to server
-    fetch("http://localhost:5000/signup", {
+    fetch("https://bill-board-server.vercel.app/signup", {
       method: "post",
       headers: {
         "Content-Type": "application/json",
