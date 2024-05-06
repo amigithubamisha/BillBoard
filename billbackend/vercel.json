@@ -8,12 +8,12 @@
    ],
    "routes": [
       {
-         "src": "/api/(.*)", // Change this to match your Express routes
-         "dest": "/index.js" // Point to your Express application entry point
+         "src": "/api/(.*)", 
+         "dest": "/index.js" 
       },
       {
          "src": "/(.*)",
-         "dest": "/index.js" // Point to your Express application entry point
+         "dest": "/index.js" 
       }
    ]
 }
