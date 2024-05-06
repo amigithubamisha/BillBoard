@@ -10,7 +10,7 @@ dotenv.config();
 // Enable CORS middleware
 app.use(cors(
     {
-        origin: ["https://bill-board-front.vercel.app"],
+        origin: ["http://localhost:3000", "https://bill-board-front.vercel.app"],
         methods: ["POST", "GET"] ,
         credentials: true
     }
