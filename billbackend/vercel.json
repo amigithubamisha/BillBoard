@@ -1,15 +1,19 @@
 {
    "version": 2,
    "builds": [
-    {
-        "src": "./index.js",
-        "use": "@vercel/node"
-    }
+      {
+         "src": "./index.js",
+         "use": "@vercel/node"
+      }
    ],
    "routes": [
-    {
-        "src": "/(.*)",
-        "dest": "/"
-    }
-   ]
+      {
+         "src": "/api/(.*)", // Change this to match your Express routes
+         "dest": "/index.js" // Point to your Express application entry point
+      },
+      {
+         "src": "/(.*)",
+         "dest": "/index.js" // Point to your Express application entry point
+      }
+   ]
 }
