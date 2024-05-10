@@ -96,7 +96,7 @@ router.post('/forgot-password', async (req, res) => {
         });
 
         const mailOptions = {
-            from: 'amisha.nanda2000@gmail.com',
+            from: 'amishananda2000@gmail.com',
             to: user.email,
             subject: 'Reset Password Link',
             text: `Click on the link to reset your password: http://localhost:3000/reset_password/${user._id}/${token}`,
